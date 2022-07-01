@@ -1,0 +1,172 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <title>Blog</title>
+
+    <style>
+        .show,
+            .show-1 {
+                display: inline;
+            } 
+    
+        .hide,
+        .hide-1,
+        .hide-2 {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <h1 id="logo"> PB </h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Activities</a></li>
+                    <li><a href="blog.html" class="current">Blog</a></li>
+                    <li><a href="projec.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="flex-columns">
+        <div class="row">
+        <div class="column">
+        <div class="column-2 bg-dark">
+        <h2>
+            <img src="123.jpeg">
+            Power of Zero
+        </h2>
+                        <p class="meta">
+                            July 1 2022
+                        </p>
+                        
+                        <p class="blog-text">
+                            I have learnt Machine Learning from coursera. Then I understood the power of Maths. It was very ravishing how Maths was the main lead in forming the basics of Machine Learning.<span class="show hide">
+                            Then a thought struck in my mind. What could have happened if Aryabhatta had not invented "0". And believe me, time doesn't stop. And it runs compoundly. Every voter thinks, this government is not working towards achieving their development goals.
+                            </span>
+                            <br>
+                            <button id="btn" class="btn btn-light">Read More</button>
+                        </p>
+                        
+        </div>
+        </div>
+        </div>
+        </article>
+
+        <article class="flex-columns flex-reverse">
+            <div class="row">
+                <div class="column ">
+                    <div class="column-2 bg-light">
+                        <div class="column">
+                            <div class="column-1">
+                                <img src="123456.jpeg">
+                            </div>
+                        </div>
+                        <h2>Fintech</h2>
+                        <p class="meta"> |
+                        July 1 2022
+                        </p>
+                        <p class="blog-text">
+                            Bitcoin is touching heights and so are other currencies. Seeing this high profits, everybody one or the other day thought of investing in this gambling. 
+                            And why not? <span class="show-1 hide-1">In one day you become a millionaire. Nobody thinks about the steap downhill from Raja to Runk. But think before investing in any crypto currency. 
+                            Its a net created by big fishes to catch small fishes and eat them all at once.</span>
+                            <br>
+                            <button id="btn-1" class="btn btn-dark">Read More</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <div class="bottom-line1"></div>
+                    <pre>
+              E - 303, E block Boys Hostel,
+              L.D. College of engineering
+              Ahmedabad
+            </pre>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <div class="bottom-line1"></div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow my work @</h4>
+                    <div class="bottom-line1"></div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="contact-info">
+                        <div>
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:pulkitbhatnagar08@gmail.com"
+                                class="btn-dark">pulkitbhatnagar08@gmail.com</a>
+
+                        </div>
+                        <div>
+                            <i class="fas fa-phone fa-2x"></i>
+                            <h3>Phone</h3>
+                            <a href="tel:+91 8511558099" class="btn-dark">+91 8511558099</a>
+                        </div>
+                    </div>
+                </div>
+    </footer>
+    <script>
+        const btn = document.querySelector( '#btn' );
+        const text = document.querySelector( '.show' );
+        btn.addEventListener( 'click', function() {
+            text.classList.toggle( 'hide' )
+
+            btn.textContent == "Read More"
+                ? ( btn.textContent = "Read Less" )
+                : ( btn.textContent = "Read More" );
+
+
+        } )
+        const btn1 = document.querySelector( '#btn-1' );
+        const text1 = document.querySelector( '.show-1' );
+        btn1.addEventListener( 'click', function() {
+            text1.classList.toggle( 'hide-1' )
+
+            btn1.textContent == "Read More"
+                ? ( btn1.textContent = "Read Less" )
+                : ( btn1.textContent = "Read More" );
+
+
+        } )
+
+    </script>
+
+</body>
+
+</html>

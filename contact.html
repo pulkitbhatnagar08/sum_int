@@ -1,0 +1,176 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utilities.css">
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="form.css">
+        <title>Contact Me | UI/UX Designer & React Developer</title>
+    </head>
+    
+    <body>
+        <!-- header -->
+        <header id="header-inner">
+            <div class="container">
+                <nav id="main-nav">
+                    <h1 id="logo"> PB </h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">Activities</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html" class="current">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <!-- section a: Contact form -->
+        <section id="contact-a" class="text-center py-3">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="bottom-line"></div>
+                <p class="lead">Here is how you can reach me</p>
+                <form onsubmit="event.preventDefault()">
+                    <div class="text-fields">
+                        <div class="form-content">
+                            <input type="text" class="text-input name-input" pattern="[a-zA-Z].{2,}"
+                                title="Must be alphbets only,minimum 3 " required>
+                            <label>Name</label>
+                        </div>
+                        <div class="form-content">
+    
+                            <input type="text" class="text-input subject-input" required>
+                            <label>Subject</label>
+                        </div>
+                        <div class="form-content">
+    
+                            <input type="email" class="text-input email-input"
+                                title="Email format must be _@_.__"
+                                required>
+                                <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+                            <label>Email</label>
+                        </div>
+                        <div class="form-content">
+    
+                            <input type="text" class="text-input phone-input" 
+                                title="Exactly 10 digits  " required>
+                                <!-- pattern="[0-9]{10,10}" -->
+                            <label> Phone No</label>
+                        </div>
+    
+                        <textarea class="text-input message-input" placeholder="Enter Message" required></textarea>
+    
+                    </div>
+                    <button type="submit" class="btn-dark">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- section b: Contact info -->
+        <section id="contact-b" class="py-3 bg-dark">
+            <div class="container">
+                <div class="contact-info">
+    
+                    <div>
+                        <i class="fas fa-address-card fa-2x"></i>
+                        <h3>
+                            Address
+                        </h3>
+                        <Address>
+                            204 copper leaf,<br>
+                            opp. Parshwanath Jain mandir,<br>
+                            AEC Char Rasta, Bhuyangdev,<br>
+                            Ahmedabad, Gujarat 380061
+                        </Address>
+    
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14684.274787797935!2d72.5381015!3d23.0579429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x249acb663e46af9b!2sSoft%20Coding%20Solutions!5e0!3m2!1sen!2sin!4v1654522792160!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section c: tagline -->
+        <section id="contact-c" class="bg-main py-4">
+            <div class="container">
+    
+                <h1>Lets start your next Project</h1>
+            </div>
+        </section>
+    
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <div class="bottom-line1"></div>
+                        <pre>
+                      near, 204 copper leaf,
+                      opp. Parshwanath Jain mandir,
+                      AEC Char Rasta, Bhuyangdev, 
+                      Ahmedabad, Gujarat 380061
+                    </pre>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <div class="bottom-line1"></div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow Me</h4>
+                        <div class="bottom-line1"></div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="contact-info">
+                            <div>
+                                <i class="fas fa-envelope fa-2x"></i>
+                                <h3>Email</h3>
+                                <a href="mailto:softcodingsolutions@gmail.com"
+                                    class="btn-dark">softcodingsolutions@gmail.com</a>
+    
+                            </div>
+                            <div>
+                                <i class="fas fa-phone fa-2x"></i>
+                                <h3>Phone</h3>
+                                <a href="tel:+91 5555566655" class="btn-dark">+91 5555566655</a>
+                            </div>
+                        </div>
+                    </div>
+        </footer>
+        <p class="footer copy">Copyright &copy; 2022 Reserved</p>
+    
+        <script>
+            const labels = document.querySelectorAll( "label" );
+    
+            labels.forEach( function( label ) {
+                label.innerHTML = label.innerText
+                    .split( "" )
+                    .map(function(letter, idx){
+                return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+            })
+                    .join( "" );
+            } );
+        </script>
+    
+    </body>
+    
+    </html>
